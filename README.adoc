@@ -52,10 +52,23 @@ SÖZDE KOD KISMII ondan sonra image eklenecek önce sonra göterimi
 ****
 Medyan filtresi görüntü işlemede çok sık kullanılan filtredir. Görüntülerde gürültü adı verilen, istenmeyen sinyaller bulunmaktadır. Gürültü, görüntüyü kirleten ve görüntü kalitesini düşüren harici kaynaklarda oluşan etkidir. Gürültü bir görüntü içerisinde bir çok farklı kaynaklardan meydana gelebilir. Filtreleme   yöntemleri sayesinde görüntüler gürültüden arındırılarak istenilen hale getirilebilir.
 ****
-4.1Filtreleme Yöntemi::
-Bahsedildiği üzere medyan filtresi en çok tercih edilen algoritmaların başında yer alır ve lineer bir işlem değildir.[5]
+4.1.Filtreleme Yöntemi::
+Bahsedildiği üzere medyan filtresi en çok tercih edilen algoritmaların başında yer alır ve lineer bir işlem değildir.
 Medyan filtreler nonlineer uzaysal filtrelerdir. Maskeyi oluşturan boyuttaki resim piksel değerlerinin küçükten büyüğe sıralanıp ortadaki değeri merkez piksele atama işlemidir. Medyan filtresi bir alçak geçiren filtredir.
 Mean filtrelerinin genel çalışma mantığı ise; NxN lik bir matris penceresi içerisinde bir ortalama değer bulmaya çalışarak işlenir. 
 Bunu yaparken görüntü üzerinde gezen bir kayan pencere yöntemi kullanırlar. Medyan filtresi mean filtreleri içerisinde en basit olanıdır. Pencere içerisindeki değerlerin aritmetik ortalamasını alır ve bu şekilde büyük atlamaları kaldırmış olur. Filtre uygulandıktan sonra; konumlarından ayrılmış olan pikseller tespit edilerek temizlenmiş olur. Görüntü içerisindeki yerel değişimleri yumuşatmış olur. 
+4.2.Python ile Medyan Filtre Uygulaması::
+
+
+ÖNCESİ SONRASI RESİM VE SÖZDE KOD
+
+*5.OTSU EŞİKLEME*
+****
+Bu bölümde gerçekleştirilecek olan uygulamada Otsu eşikleme algoritması kullanılacaktır. Eşikleme ya da ikili tonlama da denilebilir, bu algoritmada amaç gri olarak tonlanmış olan bir görüntünün ikili bir hale getirilmesidir. Bir görüntünün ikili hale getirilmesi demek siyah beyaz uzaya dönüştürülmesi demektir. Bu uygulamada otsu algoritmasının nasıl çalıştığı incelenmiştir.
+****
+5.1.Otsu Eşiklemenin Çalışma Mantığı::
+Siyah beyaz görüntüler görüntü üzerinde belirli dizilerin ya da şekillerin arandığı uygulamalarda işlem yükünü hafifletmek veya görüntü üzerinde mantıksal işlemleri hızlandırmak için kullanılırlar. Adını metodu geliştiren Nobuyuki Otsu’dan almıştır. Normalde bir gri görüntüyü ikili biçime çevirmek için izlenecek yöntem oldukça basittir. Bir eşik değeri belirlenir ve bu eşik değerin üzerindeki renkler beyaza, altındaki renkler siyaha dönüştürülür. Ancak tüm görüntüler aynı niteliklere sahip değildir. Sabit bir eşik değeri tüm görüntüler üzerinde kabul edilebilir sonuçlar üretemeyebilir. Dolayısıyla eşik değerin, resmin renk dağılımına uygun olarak belirlenmesini sağlayacak bir yönteme ihtiyaç duyulur.
+
+Otsu metodu, gri seviye görüntüler üzerinde uygulanabilen bir eşik tespit yöntemidir. Gri tonlarda olan bir görüntü 0-255 arasında seçilecek olan bir T eşik değerine göre siyah beyaz görüntü oluşturulur.
 
 
