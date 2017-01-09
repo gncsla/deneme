@@ -40,5 +40,22 @@ Ağırlık toplama yönteminin doğru uygulanabilmesinin ilk aşaması; RGB uzay
  
  image::C:\Users\Tosuncuk\Desktop.png[caption="Denklem:3.1"]
  
- 
+ 3.2 Python ile Ağırlık Toplama Yöntemi Uygulaması::
+ Uygulamamızda renkli bir resmi gri tonlarına dönüştüreceğiz. Python dilinde resim dosyaları üzerinde işlem yapabilmek için “Image” kütüphanesini projemize dahil etmeliyiz. Python dili için bu tür grafik kütüphanelerini içine bulunduran “PIL” paketini indirebiliriz. Bunun için terminalimizden “pip install pillow” komutunu yazarak ‘PIL’ paketini indiriyoruz. Bu işlem bittikten sonra Eclipse->PyDev Project ile yeni projemize isim verip kodlarımızı yazmaya başlıyoruz.
+
+
+SÖZDE KOD KISMII ondan sonra image eklenecek önce sonra göterimi
+
+
+
+*4.MEDYAN FİLTRELEME*
+****
+Medyan filtresi görüntü işlemede çok sık kullanılan filtredir. Görüntülerde gürültü adı verilen, istenmeyen sinyaller bulunmaktadır. Gürültü, görüntüyü kirleten ve görüntü kalitesini düşüren harici kaynaklarda oluşan etkidir. Gürültü bir görüntü içerisinde bir çok farklı kaynaklardan meydana gelebilir. Filtreleme   yöntemleri sayesinde görüntüler gürültüden arındırılarak istenilen hale getirilebilir.
+****
+4.1Filtreleme Yöntemi::
+Bahsedildiği üzere medyan filtresi en çok tercih edilen algoritmaların başında yer alır ve lineer bir işlem değildir.[5]
+Medyan filtreler nonlineer uzaysal filtrelerdir. Maskeyi oluşturan boyuttaki resim piksel değerlerinin küçükten büyüğe sıralanıp ortadaki değeri merkez piksele atama işlemidir. Medyan filtresi bir alçak geçiren filtredir.
+Mean filtrelerinin genel çalışma mantığı ise; NxN lik bir matris penceresi içerisinde bir ortalama değer bulmaya çalışarak işlenir. 
+Bunu yaparken görüntü üzerinde gezen bir kayan pencere yöntemi kullanırlar. Medyan filtresi mean filtreleri içerisinde en basit olanıdır. Pencere içerisindeki değerlerin aritmetik ortalamasını alır ve bu şekilde büyük atlamaları kaldırmış olur. Filtre uygulandıktan sonra; konumlarından ayrılmış olan pikseller tespit edilerek temizlenmiş olur. Görüntü içerisindeki yerel değişimleri yumuşatmış olur. 
+
 
