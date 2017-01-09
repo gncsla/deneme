@@ -68,7 +68,29 @@ Bu bölümde gerçekleştirilecek olan uygulamada Otsu eşikleme algoritması ku
 ****
 5.1.Otsu Eşiklemenin Çalışma Mantığı::
 Siyah beyaz görüntüler görüntü üzerinde belirli dizilerin ya da şekillerin arandığı uygulamalarda işlem yükünü hafifletmek veya görüntü üzerinde mantıksal işlemleri hızlandırmak için kullanılırlar. Adını metodu geliştiren Nobuyuki Otsu’dan almıştır. Normalde bir gri görüntüyü ikili biçime çevirmek için izlenecek yöntem oldukça basittir. Bir eşik değeri belirlenir ve bu eşik değerin üzerindeki renkler beyaza, altındaki renkler siyaha dönüştürülür. Ancak tüm görüntüler aynı niteliklere sahip değildir. Sabit bir eşik değeri tüm görüntüler üzerinde kabul edilebilir sonuçlar üretemeyebilir. Dolayısıyla eşik değerin, resmin renk dağılımına uygun olarak belirlenmesini sağlayacak bir yönteme ihtiyaç duyulur.
+Otsu metodu, gri seviye görüntüler üzerinde uygulanabilen bir eşik tespit yöntemidir. Gri tonlarda olan bir görüntü 0-255 arasında seçilecek olan bir T eşik değerine göre siyah beyaz görüntü oluşturulur. Bunun üzerine kullanılacak olan görüntü için eşik değerini hesaplayan algoritma Nobuyuki Otsu tarafından geliştirilmiştir. Geliştirilen otsu metodu eşik değerini görüntü üzerinden hesaplamaktadır.
+Gri tonlu görüntüler üzerinde çalışmakta olduğunu belirtmiştik. Sadece renklerin görüntü üzerinde kaçar defa bulunduğuna bakarak hesaplamaları yapar. Bu yüzden önce görüntünün renk histogramı hesaplanır ve tüm işlemler histogram dizisi üzerinde yapılır.
 
-Otsu metodu, gri seviye görüntüler üzerinde uygulanabilen bir eşik tespit yöntemidir. Gri tonlarda olan bir görüntü 0-255 arasında seçilecek olan bir T eşik değerine göre siyah beyaz görüntü oluşturulur.
+5.2.Python ile Otsu Eşikleme Uygulaması::
+
+SÖZDE KOD VE RESİMLERİ
+
+*6.CANNY KENAR BELİRLEME ALGORİTMASI*
+****
+Canny kenar belirleme algoritması; görüntüde keskin olarak belirlenmiş kenarlarıbulmak için John F. Canny tarafından geliştirilmiş ve aşamaları olan bir algoritmadır.Kenar bulmada son derece etkin olarak kullanılan bir algoritmadır. Aşamaları maddeleyecek olursak;
+1. Görüntünün gürültülerini azaltmak amacıyla Gaussian çekirdekle konvolüsyon alınarak azaltılır. Gaussian filtre dışında Mean ya da Medyan filtrede kullanılabilir.
+2. Gradyan operatörü uygulanır. Bu şekilde görüntünün Gradyan büyüklüğü ve yönü hesaplanır. Bu işlem için Sobel filtresi en çok kullanılan yöntemdir. Bunun dışında Prewitt ve Robert kenar bulma metotları da mevcuttur.
+3. Kenarlar Non Maxima baskılama kullanılarak incelemeye alınır.
+4. İkili eşikleme uygulanır bu şekilde istenmeyen ayrıntılardan arındırılma işlemi gerçekleştirilir.
+5. Güçlü-zayıf ayrımı yapıldıktan sonra baskılama uygulanır ve asılkenarlarla görüntüye son hali verilir.
+****
+6.1.Python ile Kenar Belirleme Uygulamas::
+SÖZDE KOD VE RESİM
+
+
+
+
+
+
 
 
