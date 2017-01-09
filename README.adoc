@@ -4,6 +4,14 @@ Bu projede görüntü işleme algoritmaları üzerine çalışılmıştır. Algo
 ****
 
 .*GİRİŞ*
-Proje çalışmamız görüntü işleme zerinde iyileştirme çalışmalarından oluşmaktadır. Bu çalışmalardan önce görüntü işlemenin ne olduğuna dair ve neden görüntülerin iyileştirmeye gerek kaldığıyla ilgili araştırmalar yapıldı. Araştırmaların sonunda gerekli bilgiler elde edilerek görüntü iyileştirmenin algoritmalarının taraması yapıldı. 
+Proje çalışmamız görüntü işleme zerinde iyileştirme çalışmalarından oluşmaktadır. Bu çalışmalardan önce görüntü işlemenin ne olduğuna dair ve neden görüntülerin iyileştirmeye gerek kaldığıyla ilgili araştırmalar yapıldı. Araştırmaların sonunda gerekli bilgiler elde edilerek görüntü iyileştirmenin algoritmalarının taraması yapıldı. Rapor kapsamında elde edilen sonuçlar aktarılacaktır.
 ****
 *1.PROJE İÇERİĞİ ve PROBLEM TANIMI*
+****
+Projenin içeriği görüntü iyileştirme algoritmalarının görntüler üzerinde denenmesidir. Filtreleme işlemleri,kenar belirleme ve görüntü üzerinde gölgeleri belirleyerek bunların yumuşatılması ile ilgilidir. Bu işlemler için ilk aşama kullanılacak programlama dilinin belirlelenerek gerekli geliştirme ortamının kurulumu yapılmıştır. Daha sonra algoritmalar incelenerek çalışmaları raporlandırılmıştır. Algoritma koda dökülüp örnek bir görüntü üzerinde incelemesi yapılmıştır.
+****
+*2.GÖRÜNTÜ İŞLEME*
+****
+Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıdır. Görüntüler iki şekilde karşımıza çıkmaktadır.
+_Sayısal Görüntü_::
+
