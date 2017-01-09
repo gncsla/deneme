@@ -5,4 +5,5 @@ Bu projede görüntü işleme algoritmaları üzerine çalışılmıştır. Algo
 
 .*GİRİŞ*
 Proje çalışmamız görüntü işleme zerinde iyileştirme çalışmalarından oluşmaktadır. Bu çalışmalardan önce görüntü işlemenin ne olduğuna dair ve neden görüntülerin iyileştirmeye gerek kaldığıyla ilgili araştırmalar yapıldı. Araştırmaların sonunda gerekli bilgiler elde edilerek görüntü iyileştirmenin algoritmalarının taraması yapıldı. 
-=*1.PROJE İÇERİĞİ ve PROBLEM TANIMI*
+****
+*1.PROJE İÇERİĞİ ve PROBLEM TANIMI*
