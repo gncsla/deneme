@@ -13,6 +13,5 @@ Projenin içeriği görüntü iyileştirme algoritmalarının görntüler üzeri
 *2.GÖRÜNTÜ İŞLEME*
 ****
 Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıdır. Görüntüler iki şekilde karşımıza çıkmaktadır.
-
-_Sayısal Görüntü_::
+==2.1 Sayısal Görüntü
 
