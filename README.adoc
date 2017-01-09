@@ -1,1 +1,5 @@
-# denemeBuraya yazı
+=*ÖZET*
+Bu projede görüntü işleme algoritmaları üzerine çalışılmıştır. Algoritmaların tamamı kapsamından daha önceden seçilmiş ve hazırlanmış olan raporlar tekrardan ayrıntılandırılarak hazırlanmaya çalışılmıştır. Dokuz farklı işlem üzerinde çalışılmıştır. Kullanılacak geliştirme oratamının kurulumundan başlanarak,genel bilgilendirme,konu kapsamında geliştirilmiş diğer algoritmaların anlatımı ve seçilen bir algoritmanın görüntü üzerinde gerçekleştirilmesi yapılarak örneklendirilmiştir.Bu işlemler dşında bir de insanların vücudunda bulunan yara fotoğraflarının çekilmesi işlem yapılmıştır. Görseller üzerinde filtreleme,gölge ve kenar tespiti işlemleri üzerinde analizler yapılmıştır.
+
+=*GİRİŞ*
+Proje çalışmamız görüntü işleme zerinde iyileştirme çalışmalarından oluşmaktadır. Bu çalışmalardan önce görüntü işlemenin ne olduğuna dair ve neden görüntülerin iyileştirmeye gerek kaldığıyla ilgili araştırmalar yapıldı. Araştırmaların sonunda gerekli bilgiler elde edilerek görüntü iyileştirmenin algoritmalarının taraması yapıldı. Bu taramalar sonucu ve daha önce ahzırlanmış raporlar referans alınarak 
