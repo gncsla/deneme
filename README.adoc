@@ -23,6 +23,7 @@ Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıd
  Görüntünün dijital ortama aktarılmamış halidir. Piksellerle ifade edilmeyen hali olarak söylenebilir.
  
  2.3.Görüntü İşleme::
+ ****
  Dijital bir resim haline getirilmiş olan gerçek yaşamdaki görüntülerin, bir girdi resim olarak işlenerek, o resmin özelliklerinin ve görüntüsünün değiştirilmesi sonucunda yeni bir resmin oluşturulmasıdır.[2]
  ****
  *3.AĞIRLIK TOPLAMA ve RENK UZAYI İŞLEMLERİ*
