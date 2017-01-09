@@ -24,4 +24,18 @@ Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıd
  
  2.3.Görüntü İşleme::
  Dijital bir resim haline getirilmiş olan gerçek yaşamdaki görüntülerin, bir girdi resim olarak işlenerek, o resmin özelliklerinin ve görüntüsünün değiştirilmesi sonucunda yeni bir resmin oluşturulmasıdır.[2]
+ 
+ *3.AĞIRLIK TOPLAMA ve RENK UZAYI İŞLEMLERİ*
+ ****
+ Görüntü işleme, genel olarak resimsel bilgilerin analizine yönelik bir yöntem olarak tanımlanabilir. Günlük yaşamda görüntü işlemenin en yaygın örneği gözlükler diyebiliriz. Numaralı gözlükler, gözlenen görüntüleri gözdeki bazı sapmalara göre değiştirip, görüntünün göz ile temasından önce görüntünün düzeltilmesi için görev görür. Görüntü işlemede amaç, orijinal şeklinde olmayan bir görüntüyü görsel olarak güçlendirmek ve istatistiksel olarak değerlendirmektir. Görüntü işleme algoritmaları olarak bilinen, görüntülerin iyileştirmesi veya değiştirilmesi için birçok görüntü işleme tekniği bulunmaktadır.
+Burada yapılacak olan çalışmanın ilk adımı olan görüntüyü griye çevirme işlemi anlatılacaktır. Görüntüyü griye çevirmek için kullanılacak olan görüntü işleme tekniği ‘Ağırlık Toplama Yönetimi’dir. Uygulamayı gerçekleştirebilmek için ağırlık toplama yönteminin ne olduğu, nasıl kullanıldığı  ve kullanım amaçlarından bahsedilecektir.
+3.1Çalışma Mantığı::
+RGB olarak tanımlanmış bir görüntüyü griye çevirme işleminde ağırlık metodu kullanılacaksa; R G B kanallarının kendine özgü ağırlıklarıyla uygulanacağı ifade edilmektedir. Sırasıyla R G ve B kanallarının ağırlıkları; 0.2126, 0.7152, 0.0722 şeklindedir.
+
+Ağırlık toplama yönteminin doğru uygulanabilmesinin ilk aşaması; RGB uzayında gama genleşmesi ve gama sıkıştırması fonksiyonlarının ortadan kaldırılması gerekir. Bu işlemin gerçekleştirilmesi için gerekli fonksiyon aşağıda tanımlanmıştır.
+
+ 
+ image::C:\Users\Tosuncuk\Desktop.png[caption="Denklem:3.1"]
+ 
+ 
 
