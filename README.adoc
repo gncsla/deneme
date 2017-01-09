@@ -14,5 +14,6 @@ Projenin içeriği görüntü iyileştirme algoritmalarının görntüler üzeri
 ****
 Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıdır.Görüntü; gerçek yaşamda, bir görüntü veya resim basit 2 değişkenin bir fonksiyonu olarak tanımlanır.  a(x,y) gibi bir fonksiyonla ifade edilen bir resimde a bir şiddet birimi( örneğin parlaklık) ve x ve y değişkenleri ise resmin gerçek koordinatlarıdır.[1] Görüntüler iki şekilde karşımıza çıkmaktadır.
 ****
- 2.1 Sayısal Görüntü::Sayısal görüntü sayısal değerlerden oluşur.  1 ve 0’lardan oluşan sayısal görüntü yapımız a[m,n], 2 boyutlu dünyadan elde edilen a(x,y) fonksiyonundan örnekleme tekniği kullanılarak oluşturulur. 
+ 2.1 Sayısal Görüntü::
+ Sayısal görüntü sayısal değerlerden oluşur.  1 ve 0’lardan oluşan sayısal görüntü yapımız a[m,n], 2 boyutlu dünyadan elde edilen a(x,y) fonksiyonundan örnekleme tekniği kullanılarak oluşturulur. 
 
