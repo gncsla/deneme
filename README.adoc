@@ -17,5 +17,5 @@ Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıd
  2.1 Sayısal Görüntü::
  Sayısal görüntü sayısal değerlerden oluşur.  1 ve 0’lardan oluşan sayısal görüntü yapımız a[m,n], 2 boyutlu dünyadan elde edilen a(x,y) fonksiyonundan örnekleme tekniği kullanılarak oluşturulur. 
  
- image::http://www.elektrotekno.com/about30643.html.png[caption="Şekil1.",tittle="SayısalGörüntü"]
+ image::C:\Users\Tosuncuk\Desktop[caption="Şekil1.",tittle="SayısalGörüntü"]
 
