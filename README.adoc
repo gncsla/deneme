@@ -23,9 +23,10 @@ Görüntü işleme olayından önce görüntünün net bir tanımı yapılmalıd
  Görüntünün dijital ortama aktarılmamış halidir. Piksellerle ifade edilmeyen hali olarak söylenebilir.
  
  2.3.Görüntü İşleme::
- ****
+
  Dijital bir resim haline getirilmiş olan gerçek yaşamdaki görüntülerin, bir girdi resim olarak işlenerek, o resmin özelliklerinin ve görüntüsünün değiştirilmesi sonucunda yeni bir resmin oluşturulmasıdır.[2]
- ****
+ 
+
  *3.AĞIRLIK TOPLAMA ve RENK UZAYI İŞLEMLERİ*
  ****
 Görüntü işleme, genel olarak resimsel bilgilerin analizine yönelik bir yöntem olarak tanımlanabilir. Günlük yaşamda görüntü işlemenin en yaygın örneği gözlükler diyebiliriz. Numaralı gözlükler, gözlenen görüntüleri gözdeki bazı sapmalara göre değiştirip, görüntünün göz ile temasından önce görüntünün düzeltilmesi için görev görür. Görüntü işlemede amaç, orijinal şeklinde olmayan bir görüntüyü görsel olarak güçlendirmek ve istatistiksel olarak değerlendirmektir. Görüntü işleme algoritmaları olarak bilinen, görüntülerin iyileştirmesi veya değiştirilmesi için birçok görüntü işleme tekniği bulunmaktadır.
