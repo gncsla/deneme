@@ -157,7 +157,7 @@ Sayısal görüntü işlemede en basit ve en çok kullanılan araçlardan birisi
 
 Görüntüdeki gölgenin yumuşatılması iiçin gerçekleitirilecek işlemler bu işlemlerle benzerlik göstermektedir. Yani  gölge olarak belirlenen bölgenin yani piksellerin renk değerlerinin görüntünün geneline uyarlanmasıdır.
 
-9.2.2Histogram Eşitleme::
+9.2.2 Histogram Eşitleme::
 İdeal olarak Histogram eşitleme; Giriş histogramını, her gri seviyesinde eşit piksel sayısına sahip bir histograma dönüştürme işlemi gibi düşünülebilir. Bu pratikte mümkün değildir. Bu yöntem histogramı dar olan resimler ya da resim içindeki bölgeler için daha iyi sonuç verir. Yani Histogram eşitleme renk değerleri düzgün dağılımlı olmayan resimler için uygun bir görüntü iyileştirme metodudur. Resmin tümüne uygulanabileceği gibi sadece belli bir bölgesine de uygulanabilir. Tüm resme uygulanırsa global histogram eşitleme, resmin belli bir bölgesine uygulandığında ise lokal histogram eşitleme adını alır.
 1-Resmin histogramı bulunur (her gri seviye için piksel sayısı grafiği).
 
