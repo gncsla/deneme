@@ -178,3 +178,47 @@ Amaç; imgedeki düşük görünürlüğü iyileştirmektir.
 9.3. Gölge Belirleme ve Yumuşatma Uygulaması::
 Aşağıda işlemin gerçekleştiriminde  sonra ortaya çıkan görüntüye yer verilmiştir.
 
+
+
+
+
+*SONUÇLAR*
+****
+Projede görüntü üzerimde gerçekleştirilmiş bir çok işlem ele alınmıştır. Gerçekleştirilme sebepleri anlaşılmış,uygulamaları yapılmıştır. Gürültülerin sebep olduğu bozukluklar ne nasıl düzeltilebilecekleri, ne kadar bir iyileştirme uygulanabileceği araştırılmıştır.Bu sonuçlar raporlanıp birleştirilerek daha sonra bütün hepsi art arda referans alınan görüntü üzerinde tekrardan uygulanarak yine bazı sonuçlar elde edilmiştir. Matematiksel bir çok işlem elde edilmiş ancak bunların analizi yapılarak konu kapsamında uygun olanlarla işlem yapılmıştır. 
+****
+
+*KAYNAKLAR*
+****
+[1]	https://tekrei.github.io/dosyalar/sunum/gi.pdf
+[2]	https://tekrei.github.io/dosyalar/sunum/gi.pdf
+[3]	http://stackoverflow.com/questions/23935840/converting-an-rgb-image-to-grayscale-and-manipulating-the-pixel-data-in-python
+[4]	http://stackoverflow.com/questions/12201577/how-can-i-convert-an-rgb-image-into-grayscale-in-python?noredirect=1&lq=1
+[5]	http://www.bulentsiyah.com/goruntu-filtreleme-uygulamalari-ve-amaclari-matlab/
+[6]	http://bilgisayarkavramlari.sadievrenseker.com/2007/11/26/ortanca-filitresi-median-filter/
+[7]	http://stackoverflow.com/questions/6944150/otsus-method-and-a-median-filter-in-python?rq=1
+[8]	http://web.firat.edu.tr/iaydin/bmu357/bmu_357_bolum5.pdf
+[9]	https://github.com/bornreddy/smart-thresholds/blob/master/otsu.py
+[10]	http://www.cescript.com/2012/07/otsu-metodu-ile-adaptif-esikleme.html
+[11]	https://en.wikipedia.org/wiki/Otsu%27s_method
+[12]	http://www.labbookpages.co.uk/software/imgProc/otsuThreshold.html#examples
+[13]	https://prezi.com/fajf0ktf0l4z/goruntu-isleme/
+[14]	https://mcagriberke.wordpress.com/2013/06/18/digital-image-processing-sayisal-goruntu-isleme/
+[15]	http://web.firat.edu.tr/iaydin/bmu357/bmu_357_bolum2.pdf
+[16]	http://eng.harran.edu.tr/moodle/moodledata/100/Ders_Sunumlari/Hafta_4.pdf
+[17]	http://www.teknolojikarastirmalar.com/pdf/tr/02_2013_8_1_145_834.pdf
+[18]	http://www.acikders.org.tr/pluginfile.php/645/mod_resource/content/0/Ek_Kaynaklar/siniflandirma.pdf
+[19]	file:///C:/Users/Sla/Downloads/4683-18820-1-PB%20(1).pdf
+[20]	http://www.slideshare.net/talhakabakus/grnt-ilemede-makine-renme-teknikleri
+[21]	https://tr.wikipedia.org/wiki/Naive_Bayes_s%C4%B1n%C4%B1fland%C4%B1r%C4%B1c%C4%B1
+[22]	http://web.itu.edu.tr/~sgunduz/courses/verimaden/slides/d3.pdf
+[23]	http://code.activestate.com/recipes/576919-python-rgb-and-hsv-conversion/
+[24]	http://www.rapidtables.com/convert/color/rgb-to-hsv.htm
+[25]	http://math.stackexchange.com/questions/556341/rgb-to-hsv-color-conversion-algorithm
+[26]	http://stackoverflow.com/questions/3018313/algorithm-to-convert-rgb-to-hsv-and-hsv-to-rgb-in-range-0-255-for-both
+[27]	http://www.cescript.com/2012/07/rgb-hsv-uzay-donusumu.html
+[28]	https://prezi.com/fajf0ktf0l4z/goruntu-isleme/
+[29]	https://mcagriberke.wordpress.com/2013/06/18/digital-image-processing-sayisal-goruntu-isleme/
+
+
+
+
