@@ -107,5 +107,46 @@ HSV UYGULAMASNDAN SONRKAİ RESİMMM
 
 
 
+*8.BAYES SINIFLANDIRMA*
+****
+Görüntülerdeki gölgeler,görüntü kalitesinin azalmasına sebep olmaktadır. Bu sebepten ötürü gölgelerin belirlenerek yumuşatılması gerekebilmektedir. Gölgenin belirlenmesi için Bayesian sınıflandırma algoritmasından yararlanılacaktır. Sınıflandırma algoritması görüntü işleme kapsamında Python programlama kullanılarak örneklenmeye çalışılmıştır. Bunu sonucu paylaşılacaktır.
+****
+8.1.Bayes Sınıflandırma Çalışma Mantığı::
+Sınıflandırmanın genel amacı bir nitelik değerini,diğerlerini kullanarak belirlemektir. Veri dağılımına göre bir model elde edilir. Elde edilen bu model başarımı belirlendikten sonra niteliğin bilinmeyen değerini tahmin etmek için kullanılır. 
+Bayes sınıflandırmasında;
+	Niteliklerin hepsi aynı derecede önem sahibi
+	Nitelikler birbirlerinden bağımsızdır; yani bir nitelik değeri diğer bir nitelik değeri hakkında bilgi içermemektedir.
+Çalışmada kullanılacak sınıflandırma renkler üzerinden gerçekleştirilecektir. Piksel değerinin gölge olarak nitelendirilmesi için o pikselin ve  genel görüntü üzerinde yapılacak olasılık işlemklerinin sonuclarına göre karar verilecektir. 
 
+BAYES RESMİ
+
+
+
+
+*9.GÖLGE BELİRLEME VE YUMUŞATMA*
+9.1.Histogram Ağırlığı ile Gölge Tespiti::
+9.1.1.Histogram Nedir?::
+11.1.1.Hitogram Nedir?
+Matematiksel olarak histogram; gruplandırılmış bir veri dağılımının sütun grafiğiyle gösterimidir. Görüntüde ise her piksel seviyesini gösteren bir ölçüttür. Histogram grafiklerine bakılarak bir görüntüde parlaklık durumu veya görüntünün tonlamaları hakkında bilgi edinilebilmektedir. 
+
+11.1.2.Histogram Dengeleme::
+Bir görüntüdeki renk değerlerinin belli bir yerde kümelenmiş olmasından kaynaklanan, renk dağılımı bozukluğunu gidermek için kullanılan bir yöntemdir. 
+Histogram matematiksel olarak aşağıdaki şekilde gösterilebilir.
+h(rk )=nk 
+
+rk : k’nıncı parlaklık değeri 
+nk : k nıncı parlaklık değerinin görüntüdeki sayısı
+Görüntü histogramı incelendiğinde ani artışlar ton grup aralıkları olarak ifade edilebilmektedir. Görüntüde var olabilen bu kısımlar gölge olarak belirlenerek gerekli işlemler yapılabilmektedir.
+
+Sayısal görüntü işlemede en basit ve en çok kullanılan araçlardan birisi gri seviyesi histogramıdır. Bu fonksiyon  görüntünün gri seviyesi içeriği hakkında bilgiler elde edilmesini sağlar. Histogramdan elde edilebilecek bazı bilgiler:
+
+	Koyu bir görüntünün histogram grafiğinin düşük gri seviye bölgesine yığılacağı açıktır.
+
+	Parlak (Açık renk) düzgün bir görüntünün histogram grafiğinin büyük gri seviye bölgesine yığılacağı açıktır.
+
+	Eğer histogram bir bölgeye yığılmış ise ( yani gri sviye ekseninin belirli bir bölgesine) bu görüntünün kontrastı kötüdür denir.
+
+	İyi kontraslı bir resmin histogram grafiği tüm gri seviye değerlerine eşit yayılmış olduğunu açıklar.
+
+Görüntüdeki gölgenin yumuşatılması iiçin gerçekleitirilecek işlemler bu işlemlerle benzerlik göstermektedir. Yani  gölge olarak belirlenen bölgenin yani piksellerin renk değerlerinin görüntünün geneline uyarlanmasıdır.
 
