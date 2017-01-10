@@ -157,6 +157,24 @@ Sayısal görüntü işlemede en basit ve en çok kullanılan araçlardan birisi
 
 Görüntüdeki gölgenin yumuşatılması iiçin gerçekleitirilecek işlemler bu işlemlerle benzerlik göstermektedir. Yani  gölge olarak belirlenen bölgenin yani piksellerin renk değerlerinin görüntünün geneline uyarlanmasıdır.
 
-9.2. Gölge Belirleme ve Yumuşatma Uygulaması::
+9.2.2Histogram Eşitleme::
+İdeal olarak Histogram eşitleme; Giriş histogramını, her gri seviyesinde eşit piksel sayısına sahip bir histograma dönüştürme işlemi gibi düşünülebilir. Bu pratikte mümkün değildir. Bu yöntem histogramı dar olan resimler ya da resim içindeki bölgeler için daha iyi sonuç verir. Yani Histogram eşitleme renk değerleri düzgün dağılımlı olmayan resimler için uygun bir görüntü iyileştirme metodudur. Resmin tümüne uygulanabileceği gibi sadece belli bir bölgesine de uygulanabilir. Tüm resme uygulanırsa global histogram eşitleme, resmin belli bir bölgesine uygulandığında ise lokal histogram eşitleme adını alır.
+1-Resmin histogramı bulunur (her gri seviye için piksel sayısı grafiği).
+
+2-Histogramdan yararlanılarak kümülatif histogram bulunur. Kümülatif histogram, histogramın her değerinin kendisinden öncekiler ve kendisinin toplamı ile elde edilen değerleri içeren büyüklüktür. 
+
+3-Kümülatif histogram değerleri normalize edilip (toplam piksel sayısına bölünerek), yeni resimde olmasını istediğimiz max. renk değerleri ile çarpılır, çıkan değer tam sayıya yuvarlatılır. Böylelikle yeni gri seviye değerleri elde edilmiş olur.
+
+ 4- Eski (Orijinal) gri seviye değerleri ile; 3.adımda elde edilen gri seviye değerleri biribirine karşılık düşürülür ve yeni histogram grafiği çizilir.
+
+ n: giriş görüntüsündeki toplam piksel sayısı (n0+n1+…….+nL-1 = n) 
+ nj (nk ): j. gri seviyedeki piksel sayısı
+ L: mümkün olan (veya istenilen) toplam gri seviye sayısı( 8 bit renk derinliğinde 255 v.b)
+ sk : Daha iyi kontraslı bir görüntü elde etmek için gri seviye dönüşüm değeri.
+
+Amaç; imgedeki düşük görünürlüğü iyileştirmektir.
+
+
+9.3. Gölge Belirleme ve Yumuşatma Uygulaması::
 Aşağıda işlemin gerçekleştiriminde  sonra ortaya çıkan görüntüye yer verilmiştir.
 
