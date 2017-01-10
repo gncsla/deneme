@@ -41,7 +41,9 @@ Ağırlık toplama yönteminin doğru uygulanabilmesinin ilk aşaması; RGB uzay
  image::C:\Users\Tosuncuk\Desktop.png[caption="Denklem:3.1"]
  
  3.2 Python ile Ağırlık Toplama Yöntemi Uygulaması::
- Uygulamamızda renkli bir resmi gri tonlarına dönüştüreceğiz. Python dilinde resim dosyaları üzerinde işlem yapabilmek için “Image” kütüphanesini projemize dahil etmeliyiz. Python dili için bu tür grafik kütüphanelerini içine bulunduran “PIL” paketini indirebiliriz. Bunun için terminalimizden “pip install pillow” komutunu yazarak ‘PIL’ paketini indiriyoruz. Bu işlem bittikten sonra Eclipse->PyDev Project ile yeni projemize isim verip kodlarımızı yazmaya başlıyoruz.
+ Uygulamamızda renkli bir resmi gri tonlarına dönüştüreceğiz. Python dilinde resim dosyaları üzerinde işlem yapabilmek için “Image” kütüphanesini projemize dahil etmeliyiz. Python dili için bu tür grafik kütüphanelerini içine bulunduran “PIL” paketini indirebiliriz. Bunun için terminalimizden “pip install pillow” komutunu yazarak ‘PIL’ paketini indiriyoruz.
+ 
+ Aşağıda griye çevrilmiş olan görüntü örnei görülmektedir:
 
 
 SÖZDE KOD KISMII ondan sonra image eklenecek önce sonra göterimi
@@ -58,6 +60,7 @@ Medyan filtreler nonlineer uzaysal filtrelerdir. Maskeyi oluşturan boyuttaki re
 Mean filtrelerinin genel çalışma mantığı ise; NxN lik bir matris penceresi içerisinde bir ortalama değer bulmaya çalışarak işlenir. 
 Bunu yaparken görüntü üzerinde gezen bir kayan pencere yöntemi kullanırlar. Medyan filtresi mean filtreleri içerisinde en basit olanıdır. Pencere içerisindeki değerlerin aritmetik ortalamasını alır ve bu şekilde büyük atlamaları kaldırmış olur. Filtre uygulandıktan sonra; konumlarından ayrılmış olan pikseller tespit edilerek temizlenmiş olur. Görüntü içerisindeki yerel değişimleri yumuşatmış olur. 
 4.2.Python ile Medyan Filtre Uygulaması::
+Aşağıda medyan filtre uygulanmış görüntü görülmektedir:
 
 
 ÖNCESİ SONRASI RESİM VE SÖZDE KOD
@@ -72,6 +75,7 @@ Otsu metodu, gri seviye görüntüler üzerinde uygulanabilen bir eşik tespit y
 Gri tonlu görüntüler üzerinde çalışmakta olduğunu belirtmiştik. Sadece renklerin görüntü üzerinde kaçar defa bulunduğuna bakarak hesaplamaları yapar. Bu yüzden önce görüntünün renk histogramı hesaplanır ve tüm işlemler histogram dizisi üzerinde yapılır.
 
 5.2.Python ile Otsu Eşikleme Uygulaması::
+Aşağıda görüntüye otsu eşikleme uygulandıktan sonraki hali görülmektedir:
 
 SÖZDE KOD VE RESİMLERİ
 
@@ -85,6 +89,7 @@ Canny kenar belirleme algoritması; görüntüde keskin olarak belirlenmiş kena
 5. Güçlü-zayıf ayrımı yapıldıktan sonra baskılama uygulanır ve asılkenarlarla görüntüye son hali verilir.
 ****
 6.1.Python ile Kenar Belirleme Uygulamas::
+Aşağıda Canny kenar belirleme işlemi uygulanmış örnek görülmektedir:
 SÖZDE KOD VE RESİM
 
 *7.RGB RENK UZAYINDAN HSV RENK UZAYINA GEÇİŞ*
@@ -94,7 +99,8 @@ RGB renk uzayı genel olarak kullandığımız renk uzayıdır. Bu renk uzayınd
 7.1.HSV Açıklaması::
 HSV renk uzayı ise Hue(Renk), Saturation(Doygunluk) ve Value(Parlaklık) terimleri ile rengi tanımlar. RGB de renklerin karışımı kullanılmasına karşın HSV de renk, doygunluk ve parlaklık değerleri kullanılır. Doygunluk rengin canlılığını belirlerken parlaklık rengin aydınlığını ifade eder. Örneğin; HSV uzayında siyah renk için renk ve doygunluk değerleri 0 ile 255 arasında herhangi bir alabilir iken parlaklık değeri sıfırdır. Beyaz renkte ise parlaklık değeri 255'dir. Buna göre herhangi bir bilgisayarlı görme/görüntü işleme uygulamasında belirli renkteki bir nesneyi ayırt etmek istediğimizde HSV renk uzayını kullanmak daha elverişlidir. Çünkü RGB renk uzayında eşik değeri için kullanacağımız filtreler yerine burada sadece Hue bileşeni ile eşik değeri belirleyebiliriz. Daha net renkler elde edebiliriz. 1978 yılında Alvy Ray Smith tarafından RGB uzayına göre insan görme sistemine daha benzer bir yapı oluşturmak amacıyla tanımlandı. Şekil 1’de görüleceği üzere H değeri 0-360° arasında değişirken renklerin öz değerleri değişir. Ancak H sabit olarak seçilir ve diğer değerler (S-V) 0-100 arasında değiştirilirse aynı rengin farklı doygunluk ve parlaklıktaki değerleri elde edilir. Bu özelliğinden dolayı HSV renk temelli ayırma işlemlerinde sıklıkla tercih edilir. İki uzay arasındaki dönüşüm doğrusal olmayan bir bağlantı ile gerçekleştirilir.
 
-7.2::
+7.2::HSV Uygulaması
+HSV renk uzayına geçirilmiş görüntü aşağıda görülmektedir:
 HSV UYGULAMASNDAN SONRKAİ RESİMMM
 
 
@@ -118,8 +124,9 @@ Bayes sınıflandırmasında;
 	Nitelikler birbirlerinden bağımsızdır; yani bir nitelik değeri diğer bir nitelik değeri hakkında bilgi içermemektedir.
 Çalışmada kullanılacak sınıflandırma renkler üzerinden gerçekleştirilecektir. Piksel değerinin gölge olarak nitelendirilmesi için o pikselin ve  genel görüntü üzerinde yapılacak olasılık işlemklerinin sonuclarına göre karar verilecektir. 
 
-BAYES RESMİ
 
+8.2.Bayes Sınıflandırma Uygulaması::
+Aşağıda bayes sınıflandırma uygulanarak elde edilen görüntü görülmektedir:
 
 
 
@@ -149,4 +156,7 @@ Sayısal görüntü işlemede en basit ve en çok kullanılan araçlardan birisi
 	İyi kontraslı bir resmin histogram grafiği tüm gri seviye değerlerine eşit yayılmış olduğunu açıklar.
 
 Görüntüdeki gölgenin yumuşatılması iiçin gerçekleitirilecek işlemler bu işlemlerle benzerlik göstermektedir. Yani  gölge olarak belirlenen bölgenin yani piksellerin renk değerlerinin görüntünün geneline uyarlanmasıdır.
+
+9.2. Gölge Belirleme ve Yumuşatma Uygulaması::
+Aşağıda işlemin gerçekleştiriminde  sonra ortaya çıkan görüntüye yer verilmiştir.
 
